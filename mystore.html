@@ -7,7 +7,7 @@
     <style>
       body {
         font-family: 'Roboto', sans-serif;
-        font-size: 28px;
+        font-size: 5%px;
     }
       a {
         text-decoration: none;
@@ -21,16 +21,51 @@
     color: #0B610B;
     background: #D8D8D8; 
    } 
+   select {
+        text-decoration: none;
+        background: #F2F2F2;
+      color: #04B404;
+      padding: 2px;
+      border: 1px solid gray;
+      border-radius: 7px 
+      }
+     select :hover {
+    color: #0B610B;
+    background: #D8D8D8; 
+   } 
     </style>
-    МОЙ МАГАЗИН. ДЕНЬ МОБИЛЬНОСТИ ADEO - КВЕСТЫ. <a href="https://vtlya.github.io/lm_mobile_report/allstores.html"> СМОТРЕТЬ ВСЕ МАГАЗИНЫ </a>
+    <script type="text/javascript">
+      
+      function GetURLParameter(sParam) 
+      {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}​;
+
+
+    </script>
+    МОЙ МАГАЗИН. ДЕНЬ МОБИЛЬНОСТИ ADEO - КВЕСТЫ. <a href="https://vtlya.github.io/lm_mobile_report/allstores"> СМОТРЕТЬ ВСЕ МАГАЗИНЫ </a>
   </head>
 
 <body>
 <script>
 setTimeout(function(){
     location.reload();
-}, 1000000);
+}, 30000);
 </script>
-<iframe src="https://datastudio.google.com/embed/reporting/54e1d8a0-b556-4c14-88e9-bc0d2fd07238/page/UOp9" style="position:fixed; top:100; left:0; bottom:0; right:0; width:99%; height:95%; border:none; margin:15; padding:15; overflow:hidden; z-index:999999;" allowfullscreen></iframe>
+
+<script type="text/javascript">
+var mag = GetURLParameter('mag');
+document.body.innerHTML += '<iframe id ="frame" src="https://datastudio.google.com/embed/reporting/54e1d8a0-b556-4c14-88e9-bc0d2fd07238/page/UOp9?config=%7B%22df23%22:%22include%25EE%2580%25801%25EE%2580%2580IN%25EE%2580%2580' + mag +'%22%7D" style="position:fixed; top:100; left:0; bottom:0; right:0; width:99%; height:95%; border:none; margin:15; padding:15; overflow:hidden; z-index:999999;" allowfullscreen></iframe>';
+</script>
+
 </body>
 </html>
