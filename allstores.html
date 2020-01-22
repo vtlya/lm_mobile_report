@@ -41,9 +41,18 @@
   border: 1px solid gray;
    } 
     </style>
-   <div> <div style="display: inline-block" align="left"> ВСЕ МАГАЗИНЫ. ДЕНЬ МОБИЛЬНОСТИ ADEO - КВЕСТЫ.</div> <div align="center"> ВВЕДИТЕ НОМЕР СВОЕГО МАГАЗИНА:
+   </style>
+    МОЙ МАГАЗИН. ДЕНЬ МОБИЛЬНОСТИ ADEO - КВЕСТЫ. <a href="https://vtlya.github.io/lm_mobile_report/allstores"> СМОТРЕТЬ ИТОГИ ПО ВСЕМ МАГАЗИНАМ</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://vtlya.github.io/lm_mobile_report/regs"> СМОТРЕТЬ ИТОГИ ПО РЕГИОНАМ </a>
+   <div align="right"> ВВЕДИТЕ НОМЕР СВОЕГО МАГАЗИНА:
   <form name="idform" style="display: inline-block">
-    <input type="number" size="20" name="store" maxlength="3"> 
+    <input type="text" size="20" name="store" maxlength="3" onkeypress="return (function() {
+  document.querySelector('input').addEventListener('keydown', function(e) {
+    if (e.keyCode === 13) {
+      // можете делать все что угодно со значением текстового поля
+      location.href='https://vtlya.github.io/lm_mobile_report/mystore?store='+escape(document.forms['idform'].elements['store'].value)
+    }
+  });
+})();">
   <a type="button" onclick="location.href='https://vtlya.github.io/lm_mobile_report/mystore?store='+escape(document.forms['idform'].elements['store'].value)">СМОТРЕТЬ ТОЛЬКО МОЙ МАГАЗИН</a>
     </form>
     </div></div>
