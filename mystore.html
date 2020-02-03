@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    } 
     </style>
     МОЙ МАГАЗИН. ДЕНЬ МОБИЛЬНОСТИ ADEO - КВЕСТЫ. <a href="https://vtlya.github.io/lm_mobile_report/allstores"> СМОТРЕТЬ ИТОГИ ПО ВСЕМ МАГАЗИНАМ</a> &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://vtlya.github.io/lm_mobile_report/regs"> СМОТРЕТЬ ИТОГИ ПО РЕГИОНАМ </a>
-    <div align="right"> ВВЕДИТЕ НОМЕР СВОЕГО МАГАЗИНА:
+    <div align="right" > ВВЕДИТЕ НОМЕР СВОЕГО МАГАЗИНА:
   <form name="idform" style="display: inline-block">
     <input type="text" size="20" name="store" maxlength="3" onkeypress="return (function() {
   document.querySelector('input').addEventListener('keydown', function(e) {
@@ -60,7 +60,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   });
 })();">
-  <a type="button" onclick="location.href='https://vtlya.github.io/lm_mobile_report/mystore?store='+escape(document.forms['idform'].elements['store'].value)">СМОТРЕТЬ ТОЛЬКО МОЙ МАГАЗИН</a>
+  <a type="button" id="mymag" onclick="location.href='https://vtlya.github.io/lm_mobile_report/mystore?store='+escape(document.forms['idform'].elements['store'].value)">СМОТРЕТЬ ТОЛЬКО МОЙ МАГАЗИН</a>
     </form>
     </div>
   </head>
