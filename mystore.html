@@ -66,11 +66,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </head>
 
 <body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHS6FV9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCvQ_zG2B1gr1ehtJw3Hbh1YWwSV-tbOHk",
+    authDomain: "fir-testing-lab.firebaseapp.com",
+    databaseURL: "https://fir-testing-lab.firebaseio.com",
+    projectId: "fir-testing-lab",
+    storageBucket: "fir-testing-lab.appspot.com",
+    messagingSenderId: "983747414481",
+    appId: "1:983747414481:web:5d8145c82aedc7151c78f0",
+    measurementId: "G-97KGD97LDD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   
 <script>
 setTimeout(function(){
